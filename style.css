@@ -1,0 +1,221 @@
+:root {
+  --font: "Nunito";
+  --subFont: "Fjalla One";
+  --color1: #cc3366;
+  --transition: opacity 0.5s ease 0s;
+}
+
+* {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+a,
+a:active {
+  color: aliceblue;
+}
+
+body {
+  color: aliceblue;
+  background-color: #0e141b;
+}
+
+.nav__content {
+  padding: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 9%;
+  border-radius: 100%;
+  box-sizing: inherit;
+  margin-right: 1rem;
+}
+
+.innerHero {
+  margin: 5rem 0 4rem 10rem;
+}
+
+.innerHero p {
+  font-family: var(--font);
+  font-size: 30px;
+}
+
+.innerHero h1 {
+  margin-bottom: 1rem;
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.saludo {
+  margin-bottom: 0.5rem;
+  font-size: 35px;
+}
+
+.nav__content ul {
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 15%;
+}
+
+.nav__content li {
+  margin-right: 1rem;
+}
+
+.innerHero {
+  color: aliceblue;
+}
+.posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.posts img {
+  border-radius: 2%;
+  margin: 1rem;
+  width: 15rem;
+}
+
+.title {
+  color: aliceblue;
+  font-family: var(--subFont);
+  margin-left: 5rem;
+  font-size: 25px;
+}
+
+.posts {
+  margin-left: 5rem;
+}
+
+/* Sobre mi */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+
+.left-section {
+  background-color: #131313;
+  padding: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.longitud {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 290px;
+  position: absolute;
+  left: 330px;
+  top: 450px;
+}
+
+.longitud p {
+  font-family: var(--font);
+  font-size: 13px;
+}
+
+.right-section {
+  background-color: #131313;
+  padding: 20px;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--color1);
+  opacity: 0.5;
+  transition: var(--transition);
+  margin: 5px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  opacity: 1;
+}
+
+.toggle-button.active {
+  background-color: var(--color1);
+  opacity: 1;
+}
+
+#display-text {
+  font-family: var(--font);
+  margin-top: 5rem;
+}
+
+.carousel {
+  width: 500px;
+  margin: 250px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-item img {
+  width: 400px;
+  height: 400px;
+  margin-left: 40px;
+}
+
+/* Miniaturas */
+
+.carousel-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-thumbnails img {
+  width: 50px;
+  height: auto;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.carousel-thumbnails img.active {
+  opacity: 1;
+}
+
+/* Github y LinkedIn */
+
+.sociales a {
+  cursor: default;
+}
+
+.sociales img {
+  margin: 5rem 1.5rem 0 0;
+  width: 35%;
+  cursor: pointer;
+  border-radius: 100%;
+}
