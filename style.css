@@ -2,7 +2,12 @@
   --font: "Nunito";
   --subFont: "Fjalla One";
   --color1: #cc3366;
+  --color2: #dc507f;
   --transition: opacity 0.5s ease 0s;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -11,6 +16,12 @@
   text-decoration: none;
   box-sizing: border-box;
   transition: var(--transition);
+  font-family: var(--font);
+}
+
+*::selection {
+  background-color: var(--color1);
+  color: aliceblue;
 }
 
 a,
@@ -21,6 +32,19 @@ a:active {
 body {
   color: aliceblue;
   background-color: #0e141b;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color1);
+  border-radius: 10px;
 }
 
 .nav__content {
@@ -164,7 +188,10 @@ body {
 
 #display-text {
   font-family: var(--font);
-  margin-top: 5rem;
+  margin: 3rem 0 0 0;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 30px;
 }
 
 .carousel {
@@ -199,7 +226,7 @@ body {
 .carousel-thumbnails img {
   width: 50px;
   height: auto;
-  opacity: 0.6;
+  opacity: 0.2;
   cursor: pointer;
 }
 
@@ -209,13 +236,98 @@ body {
 
 /* Github y LinkedIn */
 
+.inv {
+  margin: 2rem 0 0 0;
+}
+
+.inv p {
+  text-align: center;
+  font-family: var(--subFont);
+  letter-spacing: 5px;
+}
+
 .sociales a {
   cursor: default;
+  font-size: 0;
+  opacity: 0.4;
+}
+
+.sociales a:hover {
+  opacity: 1;
 }
 
 .sociales img {
-  margin: 5rem 1.5rem 0 0;
+  position: relative;
+  left: 25px;
+  font-size: 0;
+  margin: 1rem 1.5rem 0 0;
   width: 35%;
   cursor: pointer;
   border-radius: 100%;
+}
+
+/* Contacto */
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: var(--color1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: var(--color2);
+  transition: ease 0.5s;
+}
+
+/* Footer */
+
+footer {
+  margin: 3rem 3rem 0 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin: 3rem 0 0 1.5rem;
+  color: #a1a1a1;
 }

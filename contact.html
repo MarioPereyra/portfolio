@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/fotoprincipal.png" />
+    <title>Sobre mi | Mario Pereyra</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav__content">
+        <span class="logo"
+          ><img src="./img/fotoprincipal.png" alt="logo" />
+          <a href="">Mario Pereyra</a></span
+        >
+        <ul>
+          <a href="./index.html"><li>Inicio</li></a>
+          <a href="./about.html"><li>Sobre mi</li></a>
+          <a href="./projects.html"><li>Proyectos</li></a>
+          <a href="./contact.html"><li>Contacto</li></a>
+          <!--<li>Color</li> -->
+        </ul>
+      </div>
+    </header>
+    <div class="formulario">
+      <h2>Contacto</h2>
+      <form action="/test.php" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input
+            placeholder="Ingrese su nombre"
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            placeholder="lorem@ipsum.com"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Asunto:</label>
+          <input
+            placeholder="Asunto"
+            type="text"
+            id="subject"
+            name="subject"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+  <footer>
+    <div class="footer__content">
+      <ul>
+        <li>Ir hacia arriba</li>
+        <li>Inicio</li>
+        <li>Sobre mi</li>
+        <li>Proyectos</li>
+      </ul>
+      <ul>
+        <li>Certificado Diseño Web</li>
+        <li>Certificado Javascript</li>
+        <li>Perfil de LinkedIn</li>
+        <li>Perfil GitHub</li>
+      </ul>
+      <div class="copyright">
+        <p>© Mario Pereyra 2023</p>
+      </div>
+    </div>
+  </footer>
+</html>
