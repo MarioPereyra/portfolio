@@ -1,3 +1,5 @@
+// Botones
+
 const toggleButtons = document.querySelectorAll(".toggle-button");
 const displayText = document.getElementById("display-text");
 
@@ -10,6 +12,12 @@ toggleButtons.forEach((button) => {
     displayText.textContent = this.dataset.text;
   });
 });
+
+displayText.textContent = document.querySelector(
+  ".toggle-button.active"
+).dataset.text;
+
+// Fotos
 
 const carousel = document.querySelector(".carousel-inner");
 const thumbnails = document.querySelectorAll(".thumbnail");

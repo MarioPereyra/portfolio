@@ -2,8 +2,8 @@
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nombre = $_POST["nombre"];
     $email = $_POST["email"];
-    $mensaje = $_POST["mensaje"];
     $asunto = $_POST["subject"];
+    $mensaje = $_POST["mensaje"];
 
     // Aquí puedes realizar el envío del correo utilizando la función mail() de PHP
     // o utilizando una librería de correo como PHPMailer o Swift Mailer

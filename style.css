@@ -19,11 +19,6 @@ html {
   font-family: var(--font);
 }
 
-*::selection {
-  background-color: var(--color1);
-  color: aliceblue;
-}
-
 a,
 a:active {
   color: aliceblue;
@@ -51,8 +46,17 @@ body::-webkit-scrollbar-thumb {
   padding: 3.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-family: var(--font);
+}
+
+.nav li {
+  position: relative;
+  top: 14px;
+}
+
+.nav li:hover {
+  border-bottom: solid 1px var(--color1);
+  transition: ease-in 0.2s;
 }
 
 .logo {
@@ -103,22 +107,25 @@ body::-webkit-scrollbar-thumb {
 .innerHero {
   color: aliceblue;
 }
+
 .posts {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  padding: 0 5rem 0 0;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.7rem;
+  margin: 2rem 0 0 0;
 }
 .posts img {
   border-radius: 2%;
-  margin: 1rem;
-  width: 15rem;
+  object-fit: cover;
+  width: 100%;
 }
 
 .title {
   color: aliceblue;
   font-family: var(--subFont);
   margin-left: 5rem;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .posts {
@@ -152,7 +159,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .longitud p {
-  font-family: var(--font);
   font-size: 13px;
 }
 
@@ -268,6 +274,10 @@ body::-webkit-scrollbar-thumb {
 
 /* Contacto */
 
+.formulario {
+  margin: 0 0 5rem 0;
+}
+
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -319,15 +329,20 @@ button:hover {
 /* Footer */
 
 footer {
-  margin: 3rem 3rem 0 0;
+  margin: 2rem 0 0 0;
+  border-top: 1px solid #532f3b;
+  padding: 2rem 0 0 0;
 }
 
 .footer__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .copyright {
-  margin: 3rem 0 0 1.5rem;
+  margin: 4.4rem 0 1rem 0;
   color: #a1a1a1;
+  font-size: 12px;
 }
+
+/* TEST */
